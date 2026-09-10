@@ -74,6 +74,12 @@ Additional attributes: `lastWebhookStatus`, `lastWebhookStatusCode`, `lastWebhoo
 
 Replace the saved driver code in Hubitat with the latest source and save it. Keep existing devices; there is no need to recreate them. Save preferences and refresh as applicable.
 
+## Testing and validation
+
+Local developer tests can exercise selected logic by substituting simulated devices, events, and Hubitat services. They do not run the Hubitat platform or establish compatibility with its runtime. Passing these tests does not verify real subscriptions, scheduling, device communication, or the Hubitat interface. Those behaviors must be checked on an actual hub.
+
+No standalone automated test suite is included in this repository. Installation, refresh/command behavior, events, and any scheduled work should be verified on your Hubitat hub using the setup steps above.
+
 ## License
 
 [MIT License](LICENSE). Author: Jon Wallace.
